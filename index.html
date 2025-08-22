@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List OAzri</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
+    <!-- OzrayAzri -->
+    <header>
+            <h1 class="text-[45px] font-mono font-bold text-center">Todo List</h1>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" class="border p-3 rounded px-33 text-left" required>
+            <input type="date" id="due-date-input" placeholder="Enter a new task" class="border p-3 rounded">
+            <button type="button" onclick="validateform()" class="bg-blue-500 text-black p-3 px-12 rounded">Add</button>
+        </form>
+
+        <!-- action button -->
+        <section>
+            <button type="button" onclick="filtertask()" class="bg-yellow-500 text-green-500 rounded py-1 px-51.5 ">Filter</button>
+            <button type="button" onclick="deleteall()" class="bg-red-500 text-black rounded py-1 px-11.5 mt-1">Delete All</button>
+        </section>
+
+        <!-- task list -->
+        <section>
+            <header>
+                <h2 class="text-xl font-semibold text-center">Task</h2>
+            </header>
+
+
+            <ul class="mt-4" id="task-list">
+                <li class="border-b py-2 text-center">Task 1</li>
+                <li class="border-b py-2 text-center">Task 2</li>
+                <li class="border-b py-2 text-center">Task 3</li>
+                <li class="border-b py-2 text-center">Task 4</li>
+                <li class="border-b py-2 text-center">Task 5</li>
+                <li class="border-b py-2 text-center">Task 6</li>
+                <li class="border-b py-2 text-center">Task 7</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 OzrayAzri. All rights reserved.</p>
+    </footer>
 
     <script src="js/script.js"></script>   
 </body>
+
 </html>
